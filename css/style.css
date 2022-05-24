@@ -1,0 +1,192 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin/montserrat-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin/montserrat-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-900 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v24-latin/montserrat-v24-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+body {
+    font-family: 'Montserrat';
+    padding: 80px;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.logo {
+    text-align: center;
+    /* margin: 80px 0 0 0; */
+}
+.nav {
+    margin: 80px 0 0 0;
+
+}
+.nav__box {
+    display: flex;
+    justify-content: center;
+}
+.nav__item:not(:last-child) {
+    margin-right: 80px;
+}
+.nav__item {
+    color: #005BBB;
+    font-size: 20px;
+}
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.slick-dots button {
+	display: block;
+	width: 20px;
+ 	height: 20px;
+  	margin: 0 5px;
+ 	border: solid 1px #005BBB;
+ 	font-size: 0;
+ 	background: #fff;
+ 	border-radius: 50%;
+ 	padding: 0;
+}
+.slick-dots .slick-active button {
+	background: #005BBB;
+}
+.slider {
+	max-width: 1280px;
+	margin: 80px auto;
+}
+.slider__item {
+    position: relative;
+}
+/* .slider__item:not("last-child"){
+    margin-right: 40px;
+} */
+.img__decor {
+    background: linear-gradient(0deg, rgba(0, 91, 187, 0.2), rgba(0, 91, 187, 0.2));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 200px;
+}
+.slider__item::before {
+    content: '';
+    width: 10px;
+    height: 50%;
+    background: #005BBB;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider__item::after {
+    content: '';
+    width: 10px;
+    height: 50%;
+    background: #FFD500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.description {
+    margin: 80px 0 0 0;
+}
+.description__item {
+    font-size: 28px;
+    color: #005BBB;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.description__item:not(:last-child){
+    margin: 0 0 1em 0;
+}
+.content {
+    margin: 80px 0 0 0;
+}
+.title {
+    font-weight: 900;
+    font-size: 40px;
+    color: #005BBB;
+    text-align: center;
+    border-top: 1px solid #005BBB;
+    padding: 16.5px;
+    position: relative;
+}
+.title:after {
+    content: '';
+    height: 1px;
+    width: 452px;
+    background: #005BBB;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%)
+}
+.content__box {
+    margin: 40px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content__item {
+    background: #005BBB;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex: 0 1 500px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    border-left: 10px solid #FFD500;
+}
+.content__decor{
+    font-size: 48px;
+    line-height: 1.4;
+}
+.contacts {
+    margin: 80px 0 0;
+}
+.contact__form {
+    margin: 40px 0 0;
+    padding: 30px;
+    border: 1px solid #005BBB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #fff;
+    background: #005BBB;
+    border: none;
+    padding: 13px 56px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.form__textarea{
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #005BBB;
+    flex-grow: 1;
+    margin-right: 30px;
+    outline: none;
+    resize: none;
+}
+.form__textarea::placeholder{
+    color: #005BBB;
+    opacity: 0.5;
+}
